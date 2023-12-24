@@ -1,0 +1,18 @@
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+
+ctx.beginPath();
+ctx.rect(20, 20, 100, 50); // Rectangle position (20, 20) and size (100, 50)
+ctx.fillStyle = 'red';
+ctx.fill();
+
+This code creates a red-filled rectangle on the canvas with a top-left corner at (20, 20) and a size of 100x50 pixels.
+
+**on computer screen (0,0) is top left.
+x goes right in +
+y goes down in +
+
+
+The canvas context is an object with properties and methods that you can use to render graphics inside 
+the canvas element. The context can be 2d or webgl (3d). Each canvas element can only have one context.
+ If we use the getContext() method multiple times, it will return a reference to the same context object.
